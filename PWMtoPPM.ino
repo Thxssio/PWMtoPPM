@@ -1,7 +1,7 @@
 
 ////////////////////////CONFIGURAÇÃO///////////////////////////////
 #define NUMERO_DE_CANAIS 8  //define o número de canais
-#define VALOR_INICIAL_SERVO 1500  //define o valor padrão do servo
+#define VALOR_INICIAL_PWM 1500  //define o valor padrão do PWM
 #define DURACAO_DO_QUADRO_PPM 22500  //define o comprimento do quadro PPM em microssegundos (1ms = 1000µs)
 #define DURACAO_DO_PULSO_PPM 300  //define o comprimento do pulso
 #define POLARIDADE_DO_PULSO 1  //define a polaridade dos pulsos: 1 é positivo, 0 é negativo
@@ -44,7 +44,7 @@ ISR(TIMER1_COMPA_vect){
 void setup(){  
   //inicializa os valores padrão do ppm para todos os canais
   for(int i=0; i<NUMERO_DE_CANAIS; i++){
-    sinalPPM[i]= VALOR_INICIAL_SERVO;
+    sinalPPM[i]= VALOR_INICIAL_PWM;
   }
 
   pinMode(PINO_DO_SINAL, OUTPUT);
