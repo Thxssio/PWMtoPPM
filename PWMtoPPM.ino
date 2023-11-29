@@ -66,14 +66,14 @@ void loop(){
   /*
   sinalPPM[Canal referente ao "Receptor"] = Valor PWM;
 
-  Canal 1 = 0
-  Canal 2 = 1
-  Canal 3 = 2
-  Canal 4 = 3
-  Canal 5 = 4
-  Canal 6 = 5
-  Canal 7 = 6
-  Canal 8 = 7
+  Canal 1 = 0 | Roll
+  Canal 2 = 1 | Pitch
+  Canal 3 = 2 | Throttle
+  Canal 4 = 3 | Yaw
+  Canal 5 = 4 | Canal Livre
+  Canal 6 = 5 | Canal Livre
+  Canal 7 = 6 | Canal Livre
+  Canal 8 = 7 | Canal Livre
   */
   sinalPPM[0] = 1800; // Sinal PWM
   delay(10); // Não tire o delay!!!
